@@ -7,3 +7,5 @@ Deleted all secret keys etc. to avoid any security issues hence please assume we
 In consumer class, connection to cassadnra cluster was created and it is dumping all the records to a table in cassandra.
 
 NOTE- I did research and this is not a good way to dump data from database tables to kafka topics instead we should make use of kafka connectors which make uses of CDC tools to capture data changes on database. I understand this assignment was given from learning purpose however in real time industrial projects, for databases we should use connectors instead of making use of SQL queries inside producer.
+
+Also I have thoriughly tested these scripts and they are working fine. For any new inserts or updates to a mysql table, timestamp changes, it captures and sends to topic.
